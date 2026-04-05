@@ -1,0 +1,17 @@
+1. What layout issues did you find?
+
+
+
+2. How did you fix them?
+
+
+3. What was the JavaScript bug?
+
+
+
+4. Why did it happen?
+
+
+
+
+5. What improvements did you make?

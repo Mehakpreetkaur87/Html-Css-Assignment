@@ -4,8 +4,8 @@ function loadData() {
       return res.json();
     })
     .then(function(data) {
-      for (var i = 0; i < data.length; i++) {
-        setTimeout(function() {
+      for (let i = 0; i < data.length; i++) {
+        setTimeout(function showData() {
           document.getElementById("data").innerHTML += "<p>" + data[i].name + "</p>";
         }, 1000);
       }
