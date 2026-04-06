@@ -1,65 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<div style="background: lightblue; padding: 10px;">
-  <div style="font-size: 24px;">Dashboard</div>
-  <div>
-    <span style="margin-right: 20px;">Home</span>
-    <span style="margin-right: 20px;">Profile</span>
-    <span>Logout</span>
-  </div>
-</div>
+  <body>
+    <header id="dashboard">
+      <div id="dashboard-name">Dashboard</div>
+      <nav id="dashboard-maincontent">
+        <span>Home</span>
+        <span>Profile</span>
+        <span>Logout</span>
+      </nav>
+    </header>
 
-<div class="container">
+    <div class="dashboard__container">
+      <aside class="dashboard__sidebar">
+        <div>Menu 1</div>
+        <div>Menu 2</div>
+        <div>Menu 3</div>
+      </aside>
 
-  <div class="sidebar">
-    <div>Menu 1</div>
-    <div>Menu 2</div>
-    <div>Menu 3</div>
-  </div>
+      <main class="dashboard__main">
+        <div class="dashboard__cards">
+          <div class="dashboard__card"  id="data">Users</div>
+          <div class="dashboard__card">Orders</div>
+          <div class="dashboard__card">Revenue</div>
+        </div>
 
-  <div class="main">
-
-    <div class="cards">
-      <div class="card">Users</div>
-      <div class="card">Orders</div>
-      <div class="card">Revenue</div>
+        <div>
+          <button onclick="loadData()">Load Data</button>
+        </div>
+      </main>
     </div>
 
-    <div>
-      <button onclick="loadData()">Load Data</button>
-    </div>
-
-    <div id="data"></div>
-
-  </div>
-
-</div>
-
-<!-- <script src="script.js"></script> -->
- <script>
-  function loadData() {
-  fetch('https://jsonplaceholder.typicode.com/users')
-    .then(function(res) {
-      return res.json();
-    })
-    .then(function(data) {
-      for (var i = 0; i < data.length; i++) {
-        setTimeout(function() {
-          document.getElementById("data").innerHTML += "<p>" + data[i].name + "</p>";
-        }, 1000);
-      }
-    })
-    .catch(function(err) {
-      console.log(err);
-    });
-}
-
- </script>
-</body>
+    <script src="script.js"></script>
+   
+  </body>
 </html>

@@ -1,0 +1,22 @@
+1. What layout issues did you find?
+The content was not responsive and aligned properly including Home, profile and logout, cards and Menu 1, Menu 2, Menu 3
+
+2. How did you fix them?
+Applied the changes given in the instructions.md file:
+ - Aligned the Home, profile and logout to the right side of the navbar.
+ - Fixed the sidebar by giving proper space.
+ - Fixed the cards and aligned them to the center.
+
+
+3. What was the JavaScript bug?
+- var was used in the loop and didn't show the actual data of the users.
+- Usernames were printed again when the button was clicked multiple times.
+
+4. Why did it happen?
+- var doesn't clear the previous data that results on adding the data one after another.
+
+5. What improvements did you make?
+- Added let instead of var
+- Added the loading message
+- Cleared the previous data before adding new data.
+- Added the user's data in the user card.
