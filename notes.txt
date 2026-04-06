@@ -10,7 +10,7 @@ Applied the changes given in the instructions.md file:
 
 3. What was the JavaScript bug?
 - var was used in the loop and didn't show the actual data of the users.
-- Usernames was printed again when the button was clicked multiple times.
+- Usernames were printed again when the button was clicked multiple times.
 
 4. Why did it happen?
 - var doesn't clear the previous data that results on adding the data one after another.
@@ -19,3 +19,4 @@ Applied the changes given in the instructions.md file:
 - Added let instead of var
 - Added the loading message
 - Cleared the previous data before adding new data.
+- Added the user's data in the user card.
